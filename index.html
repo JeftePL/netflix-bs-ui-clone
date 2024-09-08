@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Netflix UI Clone</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid flex-nowrap">
+          <button
+            class="navbar-toggler focus-ring"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="/" class="navbar-brand">
+            <img src="img/logo.png" alt="Netflix" class="my-1" height="34px" />
+          </a>
+          <div
+            class="offcanvas offcanvas-start bg-gray"
+            tabindex="-1"
+            id="navbarNav"
+            aria-labelledby="navbarNavLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="d-flex p-2 d-flex align-items-center">
+                <img src="img/avatar.png" alt="Avatar" class="me-2" width="38" height="38" />
+                <p class="h6 m-0">John Doe</p>
+              </div>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <hr class="border border-secondary border-1 m-0 d-lg-none" />
+            <div class="offcanvas-body">
+              <ul class="navbar-nav text-white gap-3">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-reset active fw-bold">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-reset">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-reset">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-reset d-lg-none d-xl-block">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-reset">My List</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a href="#" class="nav-link text-reset">TV Action &amp; Adventure</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a href="#" class="nav-link text-reset">Action Thriller Movies</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a href="#" class="nav-link text-reset">Critically Acclaimed TV Shows</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a href="#" class="nav-link text-reset">TV Dramas</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a href="#" class="nav-link text-reset">US TV Shows</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a href="#" class="nav-link text-reset">Anime</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form class="form-inline" role="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              class="form-control focus-ring text-white bg-secondary rounded-0"
+              placeholder="search"
+              aria-label="search"
+            />
+          </form>
+          <div class="d-flex p-2 d-none d-lg-flex align-items-center">
+            <img src="img/avatar.png" alt="Avatar" class="me-2" width="38" height="38" />
+            <p class="h6 m-0">John Doe</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid pt-4">
+      <section class="row position-relative align-items-center">
+        <img
+          src="img/full-banner.webp"
+          alt="Avengers: Endgame"
+          class="img-fluid p-0 vh-100 object-fit-cover opacity-50"
+        />
+        <div class="col-xxl-4 col-xl-5 col-md-6 col-12 text-gray position-absolute z-2">
+          <div class="ps-4 d-flex justify-content-start align-items-center h-100 text-white">
+            <div>
+              <h1>Avengers: Endgame</h1>
+              <small class="d-flex my-2">
+                <span class="me-3">2019</span>
+                <span>182 min</span>
+              </small>
+              <p class="d-none d-lg-block">
+                After Thanos wipes out half of all living creatures, the Avengers must deal with the
+                loss of friends and loved ones. With Tony Stark lost in space without food or water,
+                Steve Rogers and Natasha Romanov lead the resistance against the Mad Titan.
+              </p>
+              <a href="#" class="btn btn-light fw-bold px-4 py-1 rounded mt-3">
+                <div class="d-flex justify-content-center align-items-center gap-2 fs-5 ps-1 pe-2">
+                  <span class="fs-2 lh-sm">&#9654;</span> Play
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 position-absolute bottom-0 mb-5 d-flex justify-content-end">
+          <span class="me-3"><button class="btn btn-warning text-white fw-bold">12</button></span>
+        </div>
+      </section>
+      <section class="mt-4">
+        <div class="row">
+          <div class="col-12">
+            <a class="text-decoration-none" href="">
+              <h2 class="h4 m-0">Recently Added</h2>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div id="carouselRecentlyAdded" class="carousel slide">
+            <div
+              class="carousel-indicators position-relative top-0 justify-content-end z-1 w-100 m-0"
+            >
+              <button
+                type="button"
+                data-bs-target="#carouselRecentlyAdded"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselRecentlyAdded"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselRecentlyAdded"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/1917.webp" alt="19177" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-chosen.webp"
+                        alt="The Chosen"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/forest-gump.webp"
+                        alt="Forest Gump"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/kingsman.webp"
+                        alt="Kingsman - The Secret Service"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/fubar.jpg" alt="Fubar" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/jason-bourne.webp"
+                        alt="Jason Bourne"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/spy-family.webp"
+                        alt="Spy Family"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/kingsman-the-golden-circle.webp"
+                        alt="Kingsman - The Golden Circle"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/frontier.jpg" alt="Frontier" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/el-chapo.jpg" alt="El Chapo" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/house-of-cards.jpg"
+                        alt="House of Cards"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/lost.webp" alt="Lost" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/seinfeld.webp" alt="Seinfeld" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-ranch.jpg"
+                        alt="The Ranch"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/power.jpg" alt="Power" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-old-guard.jpg"
+                        alt="The Old Guard"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/altered-carbon.jpg"
+                        alt="Altered Carbon"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/narcos.jpg" alt="Narcos" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev w-auto"
+              type="button"
+              data-bs-target="#carouselRecentlyAdded"
+              data-bs-slide="prev"
+            >
+              <a
+                class="link-opacity-10 link-opacity-100-hover display-1 text-decoration-none"
+                aria-hidden="true"
+              >
+                &#8249;
+              </a>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next w-auto"
+              type="button"
+              data-bs-target="#carouselRecentlyAdded"
+              data-bs-slide="next"
+            >
+              <a
+                class="link-opacity-10 link-opacity-100-hover display-1 text-decoration-none"
+                aria-hidden="true"
+              >
+                &#8250;
+              </a>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mt-4">
+        <div class="row">
+          <div class="col-12">
+            <a class="text-decoration-none" href="">
+              <h2 class="h4 m-0">Only on Netflix</h2>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div id="carouselNetflix" class="carousel slide">
+            <div
+              class="carousel-indicators position-relative top-0 justify-content-end z-1 w-100 m-0"
+            >
+              <button
+                type="button"
+                data-bs-target="#carouselNetflix"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselNetflix"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselNetflix"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/stranger-things.jpg"
+                        alt="Stranger Things"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/dark.jpg" alt="Dark" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/black-mirror.jpg"
+                        alt="Black Mirror"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/mindhunter.jpg"
+                        alt="Mindhunter"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/ozark.jpg" alt="Ozark" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-witcher.jpg"
+                        alt="The Witcher"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/alice-in-borderland.jpg"
+                        alt="Alice in Borderland"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/1899.jpg" alt="1899" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-good-place.jpg"
+                        alt="The Good Place"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/outer-banks.jpg"
+                        alt="Outer Banks"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/sweet-tooth.jpg"
+                        alt="Sweet Tooth"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/sandman.jpg" alt="Sandman" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/lupin.jpg" alt="Lupin" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-ranch.jpg"
+                        alt="The Ranch"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/power.jpg" alt="Power" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-old-guard.jpg"
+                        alt="The Old Guard"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/altered-carbon.jpg"
+                        alt="Altered Carbon"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/narcos.jpg" alt="Narcos" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev w-auto"
+              type="button"
+              data-bs-target="#carouselNetflix"
+              data-bs-slide="prev"
+            >
+              <a
+                class="link-opacity-10 link-opacity-100-hover display-1 text-decoration-none"
+                aria-hidden="true"
+              >
+                &#8249;
+              </a>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next w-auto"
+              type="button"
+              data-bs-target="#carouselNetflix"
+              data-bs-slide="next"
+            >
+              <a
+                class="link-opacity-10 link-opacity-100-hover display-1 text-decoration-none"
+                aria-hidden="true"
+              >
+                &#8250;
+              </a>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mt-4">
+        <div class="row">
+          <div class="col-12">
+            <a class="text-decoration-none" href="">
+              <h2 class="h4 m-0">TV Shows</h2>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div id="carouselTVShows" class="carousel slide">
+            <div
+              class="carousel-indicators position-relative top-0 justify-content-end z-1 w-100 m-0"
+            >
+              <button
+                type="button"
+                data-bs-target="#carouselTVShows"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselTVShows"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselTVShows"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/better-call-saul.jpg"
+                        alt="Better Call Saul"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/breaking-bad.webp"
+                        alt="Breaking Bad"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/vikings.webp" alt="Vikings" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-office.webp"
+                        alt="The Office"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-walking-dead.webp"
+                        alt="The Walking Dead"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/suits.webp" alt="Suits" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/anne-with-an-e.jpg"
+                        alt="Anne with an E"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/yellowstone.webp"
+                        alt="Yellowstone"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/brooklyn-nine-nine.webp"
+                        alt="Brooklyn Nine Nine"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/cobra-kai.jpg"
+                        alt="Cobra Kai"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/travelers.jpg"
+                        alt="Travelers"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/dexter.webp" alt="Dexter" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-flash.webp"
+                        alt="The Flash"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/dr-house.webp"
+                        alt="Dr. House"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/sex-and-the-city.webp"
+                        alt="Sex and The City"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/el-chapo.jpg" alt="El Chapo" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img
+                        src="img/carousel/the-last-kingdom.jpg"
+                        alt="The Last Kingdom"
+                        class="w-100 h-100 bi"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-2 d-none d-xl-block">
+                    <a href="" class="icon-link icon-link-hover w-100">
+                      <img src="img/carousel/fubar.jpg" alt="Fubar" class="w-100 h-100 bi" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev w-auto"
+              type="button"
+              data-bs-target="#carouselTVShows"
+              data-bs-slide="prev"
+            >
+              <a
+                class="link-opacity-10 link-opacity-100-hover display-1 text-decoration-none"
+                aria-hidden="true"
+              >
+                &#8249;
+              </a>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next w-auto"
+              type="button"
+              data-bs-target="#carouselTVShows"
+              data-bs-slide="next"
+            >
+              <a
+                class="link-opacity-10 link-opacity-100-hover display-1 text-decoration-none"
+                aria-hidden="true"
+              >
+                &#8250;
+              </a>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="row g-0 p-4 justify-content-center align-items-center">
+        <a
+          href=""
+          class="col-12 col-md-3 link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+        >
+          Terms of Use
+        </a>
+        <a
+          href=""
+          class="col-12 col-md-3 link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+        >
+          Privacy
+        </a>
+        <a
+          href=""
+          class="col-12 col-md-3 link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+        >
+          Cookie Preferences
+        </a>
+        <a
+          href=""
+          class="col-12 col-md-3 link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+        >
+          Help Center
+        </a>
+      </div>
+    </footer>
+
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

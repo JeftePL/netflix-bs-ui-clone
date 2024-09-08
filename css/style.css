@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  --bs-font-sans-serif: 'Open Sans', sans-serif;
+  --bs-body-font-size: 0.875rem;
+  --bs-body-bg: #1b1b1b;
+  --bs-heading-color: #ffffff;
+  --bs-bg-opacity: 1;
+  --bs-secondary-color: #ffffff;
+  --bs-secondary-rgb: 47, 47, 47;
+  --bs-dark-rgb: 27, 27, 27;
+  --bs-border-radius: 4px;
+  --bs-border-width: 0;
+  --bs-focus-ring-width: 0;
+  --bs-icon-link-transform: scale(1.05);
+  --bs-link-hover-color-rgb: 255, 255, 255;
+  --bs-link-color-rgb: 139, 139, 139;
+}
